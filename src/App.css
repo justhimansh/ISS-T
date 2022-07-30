@@ -21,9 +21,9 @@
   border-radius: 100%;
   background-color:#ABE098; 
   box-shadow:
-    0 0 60px 30px #ABE098,  /* inner white */
-    0 0 100px 60px #57C84D, /* middle magenta */
-    0 0 200px 90px #2EB62C;
+    0 0 60px 55px #ABE098,  /* inner white */
+    0 0 150px 60px #57C84D, /* middle magenta */
+    0 0 120px 90px #2EB62C;
   animation: fade 1s infinite alternate;
   transition: all 300ms ease;
 }
@@ -87,7 +87,7 @@ h1{
 }
 
 .blinking {
-  animation: fade 2s infinite alternate;
+  animation: fade 1s infinite alternate;
 }
 
 .section::-webkit-scrollbar-track {
