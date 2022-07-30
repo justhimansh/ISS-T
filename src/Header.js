@@ -1,10 +1,14 @@
 import React from "react"
+import logo from './static/ISS-LOGO.png';
+
+
 
 function Header(){
     return(
         <header>
-            <h1>ISS LOCATION FINDER :)</h1>
-            <h2>plswork</h2>
+            <div className="title">
+                <img className="ISS" src={logo}/>
+            </div>
         </header>
     )
 }
