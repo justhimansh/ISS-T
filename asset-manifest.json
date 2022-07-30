@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ISS-T/static/css/main.3b770a28.css",
+    "main.js": "/ISS-T/static/js/main.00ec3f18.js",
+    "static/js/787.68a7200e.chunk.js": "/ISS-T/static/js/787.68a7200e.chunk.js",
+    "static/media/ISS-LOGO-2.png": "/ISS-T/static/media/ISS-LOGO-2.d498ea336a33f878cd58.png",
+    "index.html": "/ISS-T/index.html",
+    "main.3b770a28.css.map": "/ISS-T/static/css/main.3b770a28.css.map",
+    "main.00ec3f18.js.map": "/ISS-T/static/js/main.00ec3f18.js.map",
+    "787.68a7200e.chunk.js.map": "/ISS-T/static/js/787.68a7200e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b770a28.css",
+    "static/js/main.00ec3f18.js"
+  ]
+}
