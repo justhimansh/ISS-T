@@ -1,5 +1,5 @@
 import React from "react"
-import logo from './static/ISS-LOGO.png';
+import logo from './static/ISS-LOGO-2.png';
 
 
 

@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <Locator />
-      
+      <Footer />
     </div>
   );
 }
