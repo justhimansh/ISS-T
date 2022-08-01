@@ -83,7 +83,7 @@ h1{
 }
 
 @keyframes fade { 
-  from { opacity: 0.1; } 
+  from { opacity: 0.05; } 
 }
 
 .blinking {

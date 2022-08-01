@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet"
 
 
+
 function getIcon(){
     return L.icon({
         iconUrl:"https://www.pngkey.com/png/full/134-1344242_international-space-station.png",
@@ -84,12 +85,12 @@ class Locator extends Component {
                     <li>Days in Orbit: {[this.state.daysInOrbit]}</li>
                     <li>Visibility: {[this.state.visibility]}</li>
                 </ul>
-                <MapContainer center={[this.state.latitude_position, this.state.longitude_position]} zoom={3} maxNativezoom={2} noWrap={true} scrollWheelZoom={true}>
+                <MapContainer center={[this.state.latitude_position, this.state.longitude_position]} zoom={3} maxNativezoom={2} noWrap={true} scrollWheelZoom={true} zoomControl={false}>
                     <TileLayer
                         noWrap={false}
                         minZoom={3}
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
+                        url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=ce9b7865-00f0-4312-bef1-a7233a850756"
                     />
                     <Marker position={[this.state.latitude_position, this.state.longitude_position]} icon={getIcon()}>
                         <Popup className="popuppls">
