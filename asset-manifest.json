@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ISS-T/static/css/main.54251f92.css",
-    "main.js": "/ISS-T/static/js/main.b847ee6c.js",
+    "main.css": "/ISS-T/static/css/main.c96bfa4a.css",
+    "main.js": "/ISS-T/static/js/main.8b4bb827.js",
     "static/js/787.68a7200e.chunk.js": "/ISS-T/static/js/787.68a7200e.chunk.js",
     "static/media/ISS-LOGO-2.png": "/ISS-T/static/media/ISS-LOGO-2.d498ea336a33f878cd58.png",
     "index.html": "/ISS-T/index.html",
-    "main.54251f92.css.map": "/ISS-T/static/css/main.54251f92.css.map",
-    "main.b847ee6c.js.map": "/ISS-T/static/js/main.b847ee6c.js.map",
+    "main.c96bfa4a.css.map": "/ISS-T/static/css/main.c96bfa4a.css.map",
+    "main.8b4bb827.js.map": "/ISS-T/static/js/main.8b4bb827.js.map",
     "787.68a7200e.chunk.js.map": "/ISS-T/static/js/787.68a7200e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54251f92.css",
-    "static/js/main.b847ee6c.js"
+    "static/css/main.c96bfa4a.css",
+    "static/js/main.8b4bb827.js"
   ]
 }
