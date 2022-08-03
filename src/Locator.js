@@ -41,11 +41,11 @@ class Locator extends Component {
                     // let latitude = parseInt(item.iss_position.latitude)
                     // let longitude = parseInt(item.iss_position.longitude)
 
-                    this.setState({
-                        latitude_position: item.iss_position.latitude,
-                        longitude_position: item.iss_position.longitude
+                    // this.setState({
+                    //     latitude_position: item.iss_position.latitude.toFixed(2),
+                    //     longitude_position: item.iss_position.longitude.toFixed(2)
                         
-                    })
+                    // })
 
                     //console.log(this.state.latitude_position)
                 })
@@ -56,34 +56,46 @@ class Locator extends Component {
                 fetch("https://api.wheretheiss.at/v1/satellites/25544")
                     .then(response2 => response2.json())
                     .then(item2 =>{
-                        //console.log(item2.velocity)
+                        //console.log(item2.latitude)
 
                         let altitudeInt = parseInt(item2.altitude)
                         //console.log(altitudeInt)
                         let velocityInt = parseInt(item2.velocity)
+
+                        var lat  = Math.round(item2.latitude*1000)/1000;
+                        var long  = Math.round(item2.longitude*1000)/1000;
     
                         this.setState({
                             altitude: altitudeInt,
                             speed: velocityInt,
                             daysInOrbit: parseInt(item2.daynum),
-                            visibility: item2.visibility
+                            visibility: item2.visibility,
+                            latitude_position: lat,
+                            longitude_position: long,
+                            
                         })
                     })
     
                     //console.log(this.state.speed)
-            }, 15000);
+            }, 10000);
+
+            
     }
+
+
 
 
     render() {
         return (
             <div>
+                
                 <h2 className="cords">Current Co-ordinates: {[this.state.longitude_position]}, {[this.state.latitude_position]}</h2>
-                <ul className="info">
-                    <li>Altitude: {[this.state.altitude]}km</li>
-                    <li>Speed: {[this.state.speed]}km/ph</li>
-                    <li>Days in Orbit: {[this.state.daysInOrbit]}</li>
-                    <li>Visibility: {[this.state.visibility]}</li>
+                <ul className="info" id="info">
+                    <span>Altitude: {[this.state.altitude]}km</span>
+                    <span>Speed: {[this.state.speed]}km/ph</span>
+                    <span>Days in Orbit: {[this.state.daysInOrbit]}</span>
+                    <span>Visibility: {[this.state.visibility]}</span>
+                    {/* <li><img src="https://bestanimations.com/media/loading-gears/1575100148loading-gear-6.gif"></img></li> */}
                 </ul>
                 <MapContainer center={[this.state.latitude_position, this.state.longitude_position]} zoom={3} maxNativezoom={2} noWrap={true} scrollWheelZoom={true} zoomControl={false}>
                     <TileLayer
@@ -94,7 +106,7 @@ class Locator extends Component {
                     />
                     <Marker position={[this.state.latitude_position, this.state.longitude_position]} icon={getIcon()}>
                         <Popup className="popuppls">
-                            HELLOOOO <br /> Easily customizable.
+                            Currently Empty
                         </Popup>
                     </Marker>
                 </MapContainer>
